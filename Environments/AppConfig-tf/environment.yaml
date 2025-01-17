@@ -1,7 +1,7 @@
-name: AppConfig
-summary: This is an App Configuration deployment using Bicep.
+name: AppConfig-tf
+summary: This is an App Configuration deployment using Terraform.
 description: Deploys an App Config.
-templatePath: appconfig.bicep
+templatePath: main.tf
 parameters:
 - id: "name"
   name: "name"
@@ -13,4 +13,4 @@ parameters:
   description: "Location to deploy the environment resources"
   default: "westus3"
   type: "string"
-runner: Bicep
+runner: Terraform
