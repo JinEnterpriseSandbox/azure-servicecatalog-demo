@@ -1,7 +1,7 @@
 name: ContainerApp
-summary: This is a deployment of a Azure Container App using Bicep.
+summary: This is a deployment of a Azure Container App using Terraform.
 description: Deploys a Container App within a Container App Environment, along with a Log Analytics Workspace
-templatePath: main.bicep
+templatePath: main.tf
 parameters:
 - id: "cpuCore"
   name: "Number of CPU Cores"
@@ -39,4 +39,4 @@ parameters:
   name: "location"
   description: "Location to deploy the environment resources. If not specified, will deploy to the region of the project"
   type: "string"
-runner: Bicep
+runner: Terraform
