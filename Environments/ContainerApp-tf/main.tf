@@ -1,3 +1,8 @@
+provider "azurerm" {
+  features {}
+
+}
+
 variable "containerAppName" {
   description = "Specifies the name of the container app."
   default     = "app-${random_string.container_app_name.result}"
