@@ -12,3 +12,8 @@ parameters:
     description: 'Name of the Web App.'
     type: string
     required: true
+  - id: location
+    name: Location
+    description: 'Location to deploy the environment resources'
+    type: string
+    default: 'westus3'
