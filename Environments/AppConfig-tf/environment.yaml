@@ -8,7 +8,7 @@ parameters:
   description: "Name of the App Config"
   type: "string"
   required: true
-- id: "ade_location"
+- id: "location"
   name: "location"
   description: "Location to deploy the environment resources"
   default: "westus3"
@@ -18,14 +18,13 @@ parameters:
   description: "List of key-value pairs"
   type: "array"
   required: true
-  itemType: "object"
-  properties:
-    key:
-      type: "string"
-      description: "The key of the key-value pair"
-    value:
-      type: "string"
-      description: "The value of the key-value pair"
-  minItems: 1
-  maxItems: 10
+  items:
+    type: object
+    properties:
+      key:
+        type: "string"
+        description: "The key of the key-value pair"
+      value:
+        type: "string"
+        description: "The value of the key-value pair"
 runner: "jleemngenvmcap.azurecr.io/ade-terraform-extensibility:latest"
