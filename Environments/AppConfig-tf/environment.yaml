@@ -13,4 +13,4 @@ parameters:
   description: "Location to deploy the environment resources"
   default: "westus3"
   type: "string"
-runner: Terraform
+runner: "jleemngenvmcap.azurecr.io/ade-terraform-extensibility:latest"
