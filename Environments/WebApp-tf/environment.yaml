@@ -17,4 +17,3 @@ parameters:
     description: 'Location to deploy the environment resources'
     type: string
     default: 'westus3'
-    required: true
