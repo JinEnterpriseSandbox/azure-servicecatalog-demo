@@ -13,20 +13,20 @@ parameters:
   description: "Location to deploy the environment resources"
   default: "westus3"
   type: "string"
-- id: keyValues
-  name: "Key Value Pairs for the App Config"
-  description: "List of key-value pairs"
-  type: "array"
-  required: true
-  items:
-    type: object
-    properties:
-      key:
-        type: "string"
-        description: "The key of the key-value pair"
-      value:
-        type: "string"
-        description: "The value of the key-value pair"
-  minItems: 1
-  uniqueItems: true
+# - id: keyValues
+#   name: "Key Value Pairs for the App Config"
+#   description: "List of key-value pairs"
+#   type: "array"
+#   required: true
+#   items:
+#     type: object
+#     properties:
+#       key:
+#         type: "string"
+#         description: "The key of the key-value pair"
+#       value:
+#         type: "string"
+#         description: "The value of the key-value pair"
+#   minItems: 1
+#   uniqueItems: true
 runner: "jleemngenvmcap.azurecr.io/ade-terraform-extensibility:latest"
