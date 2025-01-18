@@ -27,4 +27,6 @@ parameters:
       value:
         type: "string"
         description: "The value of the key-value pair"
+  minItems: 1
+  uniqueItems: true
 runner: "jleemngenvmcap.azurecr.io/ade-terraform-extensibility:latest"
