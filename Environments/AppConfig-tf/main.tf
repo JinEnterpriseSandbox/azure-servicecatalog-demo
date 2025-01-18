@@ -5,6 +5,7 @@ provider "azurerm" {
 }
 
 locals {
+  location = coalesce(var.location, var.ade_location)
   tags = {
     environment = var.env_name
     ade_environment = var.ade_env_name

@@ -40,6 +40,12 @@ variable "name" {
   type        = string
 }
 
+variable "location" {
+  description = "Optional override for ade_location"
+  type = string
+  default = null
+}
+
 variable "keyValues" {
     description = "Specifies the key-value pairs for the App Configuration store."
     type = list(object({

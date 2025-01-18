@@ -1,10 +1,10 @@
 
 resource "azurerm_app_configuration" "configStore" {
   name                = var.name
-  location            = var.ade_location
+  location            = var.location
   resource_group_name = var.resource_group_name
   sku = "standard"
-  
+
   tags = local.tags
 }
 
