@@ -47,6 +47,7 @@ variable "remote_state_sa" {
 variable "remote_state_container" {
     description = "Specifies the container name for the remote state."
     type        = string
+    default = "tfstate"
 }
 
 variable "remote_state_key" {

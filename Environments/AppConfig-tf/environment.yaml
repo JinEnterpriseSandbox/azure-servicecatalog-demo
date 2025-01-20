@@ -13,4 +13,27 @@ parameters:
   description: "Location to deploy the environment resources"
   default: "westus3"
   type: "string"
+- id: "remote_state_rg"
+  name: "Terraform Remote State: Resource Group Name"
+  description: "Specifies the resource group name for the remote state."
+  type: "string"
+  required: true
+- id: "remote_state_sa"
+  name: "Terraform Remote State: Storage Account Name"
+  description: "Specifies the storage account name for the remote state."
+  type: "string"
+  required: true
+  allowed: 
+    - "adesandboxtfstatewus2"
+    - "devopsjinlencus"
+- id: "remote_state_container"
+  name: "Terraform Remote State: Container Name"
+  description: "Specifies the container name for the remote state."
+  type: "string"
+  required: false
+- id: "remote_state_key"
+  name: "Terraform Remote State: Key"
+  description: "Specifies the key for the remote state."
+  type: "string"
+  required: false
 runner: "jleemngenvmcap.azurecr.io/ade-terraform-extensibility:latest"

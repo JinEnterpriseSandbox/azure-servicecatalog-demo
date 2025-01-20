@@ -18,6 +18,6 @@ terraform {
     resource_group_name   = var.remote_state_rg
     storage_account_name  = var.remote_state_sa
     container_name        = var.remote_state_container
-    key                   = "${var.env_name}/${var.ade_environment_type}/${var.env_name}/${var.remote_state_key}"
+    key                   = "${var.ade_env_name}/${var.ade_environment_type}/${var.env_name}/${var.remote_state_key}"
   }
 }
