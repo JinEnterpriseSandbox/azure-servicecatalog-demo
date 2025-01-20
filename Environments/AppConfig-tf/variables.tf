@@ -34,7 +34,28 @@ variable "ade_environment_type" {
 }
 
 # ============================================================
+variable "remote_state_rg" {
+    description = "Specifies the resource group name for the remote state."
+    type        = string
+}
 
+variable "remote_state_sa" {
+    description = "Specifies the storage account name for the remote state."
+    type        = string
+}
+
+variable "remote_state_container" {
+    description = "Specifies the container name for the remote state."
+    type        = string
+}
+
+variable "remote_state_key" {
+    description = "Specifies the key for the remote state."
+    type        = string
+    default     = "deploy.tfstate"
+}
+
+# ============================================================
 variable "name" {
   description = "Specifies the name of the App Configuration store."
   type        = string
