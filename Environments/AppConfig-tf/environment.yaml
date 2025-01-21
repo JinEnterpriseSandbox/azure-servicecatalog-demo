@@ -17,6 +17,9 @@ parameters:
   name: "Terraform Remote State: Resource Group Name"
   description: "Specifies the resource group name for the remote state."
   type: "string"
+  allowed: 
+    - "ade-sandbox-rg"
+    - "Shared"
   required: true
 - id: "remote_state_sa"
   name: "Terraform Remote State: Storage Account Name"
