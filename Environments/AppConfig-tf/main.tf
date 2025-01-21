@@ -13,7 +13,7 @@ locals {
     ade_subscription = var.ade_subscription
   }
 }
-terraform {
-  backend "azurerm" {
-  }
-}
+# terraform {
+#   backend "azurerm" {
+#   }
+# }
