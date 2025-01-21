@@ -3,7 +3,7 @@
 resource "azurerm_service_plan" "this" {
   name                = "${var.name}-${local.location}-${var.ade_environment_type}-asp"
   resource_group_name = var.resource_group_name
-  location            = azurerm_resource_group.this.location
+  location            = var.location
   sku_name            = "P1v2"
   os_type             = "Windows"
 }
