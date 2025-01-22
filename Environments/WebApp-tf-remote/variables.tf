@@ -65,7 +65,7 @@ variable "name" {
 variable "location" {
   description = "Optional override for ade_location"
   type = string
-  default = null
+  default = ""
 }
 
 variable "tags" {

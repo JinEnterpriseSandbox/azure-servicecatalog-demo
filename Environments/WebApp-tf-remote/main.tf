@@ -1,11 +1,10 @@
 
 provider "azurerm" {
   features {}
-  use_msi = true
 }
 
 locals {
-  location = coalesce(var.location, var.ade_location)
+  location = var.location != "" ? var.location : var.ade_location
   tags = {
     environment = var.env_name
     ade_environment = var.ade_env_name
@@ -16,7 +15,6 @@ locals {
 
 terraform {
   backend "azurerm" {
-    use_azuread_auth = true
   }
 
 }
