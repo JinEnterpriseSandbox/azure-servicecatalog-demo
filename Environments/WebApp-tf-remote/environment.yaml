@@ -4,7 +4,7 @@ version: 1.0.0
 summary: Azure Web App Environment (Terraform)
 description: Deploys an Azure Web App without a data store
 templatePath: main.tf
-runner: "jleemngenvmcap.azurecr.io/ade-terraform-extensibility:latest"
+runner: "jleemngenvmcap.azurecr.io/ade-terraform-extensibility-remote:latest"
 
 parameters:
   - id: name
